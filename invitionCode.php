@@ -7,7 +7,7 @@ class InvitionCodeUtil {
 		'8', 'P', '5', 'A', 'K', '3', 'M', 'J', 'Z', 'F', 'C', '4', 
 		'L', 'Y', 'V', 'T', 'N', 'D', 'B', 'Q', 'H'
 	];
-	// 设备码间隔码
+	// 邀请码间隔码
 	const DIVIDER = '0';
 	// 最短设备码
 	const CODE_MIN_LENGTH = 6;
@@ -20,7 +20,7 @@ class InvitionCodeUtil {
 	}
 
 	/*
-	 * ID转化为设备码
+	 * ID转化为邀请码
 	 */
 	public function id2Code($id) {
 		$buf = '';
@@ -49,7 +49,7 @@ class InvitionCodeUtil {
 		return $buf;
 	}
 	/*
-	 * 设备码转化为ID
+	 * 邀请码转化为ID
 	 */
 	public function code2ID($code) {
 		$codeLen = mb_strlen($code, 'UTF-8');
